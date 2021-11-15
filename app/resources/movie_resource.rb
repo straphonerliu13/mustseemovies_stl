@@ -10,6 +10,8 @@ class MovieResource < ApplicationResource
 
   # Direct associations
 
+  belongs_to :director
+
   belongs_to :actor
 
   has_many   :bookmarks
