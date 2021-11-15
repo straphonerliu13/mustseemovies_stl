@@ -1,6 +1,8 @@
 class Movie < ApplicationRecord
   # Direct associations
 
+  belongs_to :actor
+
   has_many   :bookmarks,
              :dependent => :destroy
 
