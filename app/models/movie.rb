@@ -6,10 +6,10 @@ class Movie < ApplicationRecord
   belongs_to :actor
 
   has_many   :bookmarks,
-             :dependent => :destroy
+             dependent: :destroy
 
   has_many   :reviews,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
@@ -20,5 +20,4 @@ class Movie < ApplicationRecord
   def to_s
     year
   end
-
 end

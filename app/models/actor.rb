@@ -4,7 +4,7 @@ class Actor < ApplicationRecord
   # Direct associations
 
   has_many   :movies,
-             :dependent => :destroy
+             dependent: :destroy
 
   # Indirect associations
 
@@ -15,5 +15,4 @@ class Actor < ApplicationRecord
   def to_s
     first_name
   end
-
 end
